@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f0f7;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #76558f;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #777;
+    font-size: 16px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.search-box select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #76558f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5c3d73;
+}
+
+#message {
+    text-align: center;
+    margin: 20px;
+    color: #76558f;
+    font-size: 17px;
+}
+
+.anime-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.anime-card {
+    background-color: #faf7fc;
+    border: 1px solid #e5d9ed;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.anime-card:hover {
+    transform: translateY(-5px);
+}
+
+.anime-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.anime-info {
+    padding: 12px;
+}
+
+.anime-info h3 {
+    color: #654477;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.anime-info p {
+    font-size: 13px;
+    margin-bottom: 7px;
+    color: #555;
+}
+
+.anime-info a {
+    display: inline-block;
+    margin-top: 8px;
+    color: #76558f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+#pageNumber {
+    font-weight: bold;
+    color: #76558f;
+}
+
+footer {
+    text-align: center;
+    margin-top: 35px;
+    color: #888;
+    font-size: 14px;
+}
+
+@media (max-width: 750px) {
+
+    .anime-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .anime-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

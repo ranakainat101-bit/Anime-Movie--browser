@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anime & Movie Explorer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Anime  & Movies Explorer Project</h1>
+           
+        </header>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search anime or movie..."
+            >
+
+            <select id="category">
+                <option value="">All Anime</option>
+                <option value="tv">TV Series</option>
+                <option value="movie">Movies</option>
+            </select>
+
+            <button id="searchBtn">Search</button>
+
+        </div>
+
+        <div id="message"></div>
+
+        <div id="animeContainer" class="anime-grid"></div>
+
+        <div class="pagination">
+
+            <button id="prevBtn">Previous</button>
+
+            <span id="pageNumber">Page 1</span>
+
+            <button id="nextBtn">Next</button>
+
+        
+
+    <script src="script.js"></script>
+
+</body>
+</html>
